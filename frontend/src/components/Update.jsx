@@ -17,7 +17,7 @@ const Update = ({ onUserUpdated }) => {
 
         try {
             const data = { name, age };
-            await axios.put(`http://localhost:9000/users/${id}`, data);
+            await axios.put(`https://userkabackend.onrender.com/users/${id}`, data);
             alert(`User with ID ${id} updated successfully`);
 
             // Clear input fields after update

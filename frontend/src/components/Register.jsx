@@ -16,7 +16,7 @@ const Register = ({ onUserAdded }) => {
 
         try {
             const user = { name, age };
-            await axios.post("http://localhost:9000/users", user);
+            await axios.post("https://userkabackend.onrender.com/users", user);
             alert("User registered successfully!");
             setName(""); // Clear input fields
             setAge("");

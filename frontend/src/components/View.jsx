@@ -11,7 +11,7 @@ const View = ({ refreshTrigger }) => {
 
     const viewData = async () => {
         try {
-            const res = await axios.get("http://localhost:9000/users");
+            const res = await axios.get("https://userkabackend.onrender.com/users");
             if (Array.isArray(res.data)) {
                 setUsers(res.data);
             } else {

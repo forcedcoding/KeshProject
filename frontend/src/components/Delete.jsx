@@ -14,7 +14,7 @@ const Delete = ({ onUserDeleted }) => {
         }
 
         try {
-            await axios.delete(`http://localhost:9000/users/${id}`);
+            await axios.delete(`https://userkabackend.onrender.com/users/${id}`);
             alert(`User with ID ${id} deleted successfully`);
             
             // Clear input field after delete
